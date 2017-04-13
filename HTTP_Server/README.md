@@ -1,10 +1,10 @@
-### HTTP Server Sketch
+## HTTP Server Sketch
 
-#### Español
+### Español
 
 Con este sketch podrás manejar tu *WiFi + Relay Board Kit* con solicitudes ```GET``` desde cualquier dispositivo. Para ilustrar los ejemplos utilizaré ```curl``` y ```python```.
 
-##### Encender relé
+#### Encender relé
 
 Para encender los relés utilizaremos la ruta ```/on``` con el parámetro ```relay``` y el número de relé a encender:
 
@@ -20,7 +20,7 @@ r = requests.get("http://192.168.1.40" + "/on", params = {'relay': 1})
 
 ```
 
-##### Apagar relé
+#### Apagar relé
 
 Para apagar los relés utilizaremos la ruta ```/off``` con el parámetro ```relay``` y el número de relé a apagar:
 
@@ -36,7 +36,7 @@ r = requests.get("http://192.168.1.40" + "/off", params = {'relay': 2})
 
 ```
 
-##### Estado de los relés
+#### Estado de los relés
 
 Para conocer el estado actual de un rele utilizaremos la ruta ```/status``` y el parámetro ```relay``` con el número del relé a consultar:
 
@@ -62,11 +62,11 @@ En la carpeta ```HTTP_Server+Panel``` hay una versión de este mismo *sketch* co
 
 
 
-#### English
+### English
 
 With this sketch you will be able to control your *WiFi + Relay Board Kit* using ```GET``` requests from any device. For the example I'm going to use ```curl``` and ```python```.
 
-##### Switch On Relay
+#### Switch On Relay
 
 For switching on one of the relay use the path ```/on``` with the parameter ```relay``` and the relay number:
 
@@ -82,7 +82,7 @@ r = requests.get("http://192.168.1.40" + "/on", params = {'relay': 1})
 
 ```
 
-##### Switch Off Relay
+#### Switch Off Relay
 
 For switching on one of the relay use the path ```/off``` with the parameter ```relay``` and the relay number:
 
@@ -98,7 +98,7 @@ r = requests.get("http://192.168.1.40" + "/off", params = {'relay': 2})
 
 ```
 
-##### Relay State
+#### Relay State
 
 If you want to know the actual state of one of the relays use the path ```/status``` and the parameter ```relay``` with the number of the relay:
 
