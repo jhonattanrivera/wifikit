@@ -1,0 +1,21 @@
+main {
+    background-color: rgb(230, 230, 230);
+}
+
+#descripcion {
+    margin: 30px 40px;
+    padding-top: 30px;
+}
+
+.rele {
+    padding: 30px 40px;
+}
+
+.rele h3{
+    display: inline;
+}
+
+.mando {
+    float:right;
+    margin: 5px;
+}
