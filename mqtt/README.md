@@ -44,7 +44,7 @@ Bothe versions are setup for connecting to the *broker* MQTT using auth. Each re
 
 The commands for switching on and off the relays are ```ON``` y ```OFF```, and ```STATUS``` to get the relay's state.
 
-#####Simple
+##### Simple
 
 The simple versión need this data to connect to the broker:
 
@@ -61,7 +61,7 @@ Once the device is connected you can try it with ```mosquito_pub```:
 mosquitto_pub -h [server] -p [port] -t '[username]/relay_one' -u [username] -P [password] -m 'STATUS'
 ```
 
-#####Secure
+##### Secure
 
 The only difference between the simple and secure versions is that the last one uses TLS. In addition for the data needed for the simple version, You need the cert **SHA-1 fingerprint** and put it in the ```fingerprint``` variable. The Sketch is setup to check if the certificate matches, if you want to stop the execution if the cert doesn't match you have to comment the line ```140```.
 
