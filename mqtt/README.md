@@ -8,7 +8,7 @@ Ambas versiones están configurados para conectarse al *broker* MQTT con credenc
 
 Los comandos para encender y apagar los relés son ```ON``` y ```OFF```, y ```STATUS``` para conocer el estado actual del relé.
 
-#####Simple
+##### Simple
 
 La versión simple necesita los siguientes datos para conectar con el *broker*:
 
@@ -25,14 +25,13 @@ Para probar el dispositivo una vez conectado puedes utilizar ```mosquito_pub```:
 mosquitto_pub -h [servidor] -p [puerto] -t '[usuario]/relay_one' -u [usuario] -P [contraseña] -m 'STATUS'
 ```
 
-#####Secure
+##### Secure
 
 La única diferencia con la versión simple es que esta versión se concta con TLS. Además de los datos necesarios para la versión simple, es necesaria la **huella digital SHA-1** del certificado y ponerla en la variable ```fingerprint```. Solo comprueba si el certificado es correcto, para que setenga la ejecución hay que descomentar la línea ```140```.
 
 Para probar el dispositivo una vez conectado puedes utilizar ```mosquito_pub```:
 
-```
-mosquitto_pub -h [servidor] -p [puerto] -t '[usuario]/relay_one' -u [usuario] -P [contraseña] -m 'STATUS'
+```mosquitto_pub -h [servidor] -p [puerto] -t '[usuario]/relay_one' -u [usuario] -P [contraseña] -m 'STATUS'
 --cafile ca.crt```
 
 Siendo ```ca.crt``` la clave publica del certificado del *broker* MQTT.
