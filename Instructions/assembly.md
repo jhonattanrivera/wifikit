@@ -4,7 +4,7 @@ Esta guía se limita a los componentes que pueden producir alguna duda a la hora
 
 ![](https://raw.githubusercontent.com/jorgegarciadev/wifikit/master/pictures/IMG_1003.jpg)
 
-#### Transistores
+### Transistores
 
 Los transistores son unos PN2222, con encapsulado TO-92 y patillas anchas. No deben confundirse con el regulador de tensión MCP1700, también con encapsulado TO-92 pero patilla estrecha.
 
@@ -15,7 +15,7 @@ Al diseñar la placa utilicé un modelo que luego me fué imposible encontrar, p
 Como se puede ver en el modelo 3d el lado plano del transitor queda del lado de los optocopladores.
 
 
-#### LED
+### LED
 
 Se trata de dos LED rojos de 3mm. Los LED tienen en la base una zona plana y una patilla más corta que coinciden con el polo negativo del LED. Éstas deben quedar del lado del los relés.
 
@@ -34,14 +34,14 @@ El regulador de tensión es un MCP1700-3302E con empaquetado TO-92 con patillas 
 
 
 
-#### English
+## English
 
 This guide is just for the components that could mislead the user when soldering: transistors, LED, voltage regulator and electrolytic capacitor. The other ones are omited because of their nature or because the indications on the board's silk.
 
 ![](https://raw.githubusercontent.com/jorgegarciadev/wifikit/master/pictures/IMG_1003.jpg)
 
 
-#### Transistors
+### Transistors
 
 The transistors are PN2222, with TO-92 packaging and wide pins. Don't mistake them with the voltage regulator MCP1700, with TO-92 packaging too but narrow pins.
 
@@ -52,14 +52,14 @@ I couldn't find the model used in the design for the transistors, You can notice
 As you can see in the 3d model the flat side of the transistor is facing the optocouplers.
 
 
-#### LED
+### LED
 
 There are two 3mm red LED. They have a flat side in their bases and a shorter pin that tell where ground is. Those should face the relays.
 
 ![](https://raw.githubusercontent.com/jorgegarciadev/wifikit/master/Instructions/img/02.png)
 
 
-#### Electrolytic capacitor and voltage regulator
+### Electrolytic capacitor and voltage regulator
 
 The 220μF electrolytic capacitor has a white bar and a shorter pin that coincide with ground.
 
